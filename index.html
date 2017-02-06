@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+<title>Box Breathing</title>
+<style>
+#box {
+  border: solid 5px #333;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 500px;
+  height: 500px;
+}
+@keyframes ball {
+    0%   {top: 483px; left: -23px;}
+    25%  {top: -23px; left: -23px;}
+    50%  {top: -23px; left: 483px;}
+    75%  {top: 483px; left: 483px;}
+    100% {top: 483px; left: -23px;}
+}
+#ball {
+  position: absolute;
+  top: 480px; left: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  animation: ball 16s linear infinite;
+}
+@keyframes breath {
+    0%   {background-color: #ccc; top: 240px; left: 240px; width:  20px; height:  20px;}
+    25%  {background-color: #06f; top:  10px; left:  10px; width: 480px; height: 480px;}
+    50%  {background-color: #3cf; top:  10px; left:  10px; width: 480px; height: 480px;}
+    75%  {background-color: #6eb; top: 240px; left: 240px; width:  20px; height:  20px;}
+    100% {background-color: #ccc; top: 240px; left: 240px; width:  20px; height:  20px;}
+}
+#breath {
+  position: absolute;
+  background-color: #999;
+  top: 240px; left: 240px; width:  20px; height:  20px;
+  animation: breath 16s ease-in-out infinite;
+}
+</style>
+</head>
+<div id=box>
+<div id=breath></div>
+<div id=ball></div>
+</div>
+<!--
+Box breathing,
+via <a href="https://jsfiddle.net/6937jx4L/">this</a>
+via <a href="https://news.ycombinator.com/item?id=13508038">this</a>.
+<-->
