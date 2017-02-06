@@ -1,6 +1,6 @@
-# Box-Breathing
+# Box Breathing
 
-Box Breathing relaxation technique, as CSS animation.
+Box breathing relaxation technique, as CSS animation.
 
 Use by visiting https://biged.github.io/Box-Breathing/ and breathing in time with the animation.
 
